@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 7.0">
+    <entity name="Book" representedClassName="Book" syncable="YES">
+        <attribute name="bookName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bookPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="Phone" representedClassName="Phone" syncable="YES">
+        <attribute name="phoneName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phonePrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="Student" representedClassName="Student" syncable="YES">
+        <attribute name="stuAge" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="stuID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stuName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="book" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Book" syncable="YES"/>
+        <relationship name="phone" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Phone" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Student" positionX="-36" positionY="9" width="128" height="120"/>
+        <element name="Book" positionX="0" positionY="72" width="128" height="75"/>
+        <element name="Phone" positionX="27" positionY="90" width="128" height="75"/>
+    </elements>
+</model>
